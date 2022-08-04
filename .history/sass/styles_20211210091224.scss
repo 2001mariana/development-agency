@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'utilities';
+
+@include reset;
+
+/*-------------CABEÇALHO-------------*/
+@import 'cabecalho';
+
+/*-------------SERVIÇOS-------------*/
+@import 'servicos';
+
+/*-------------PORTFÓLIO------------*/

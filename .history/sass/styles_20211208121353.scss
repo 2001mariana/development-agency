@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'utilities';
+
+@include reset;
+
+/*-------------CABEÇALHO-------------*/
+@import 'cabecalho';
+
+/*-------------SERVIÇOS-------------*/
+@import 'servicos';
+
+/*-------------PORTFÓLIO------------*/
+.works__container {
+    background-color: $secondary-bg;
+}

@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'utilities';
+
+@include reset;
+
+body {
+    min-width: 790px;
+}
+
+/*-------------CABEÇALHO-------------*/
+@import 'cabecalho';
+
+/*-------------SERVIÇOS-------------*/
+@import 'servicos';
+
+/*-------------PORTFÓLIO------------*/
+@import 'portfolio';
+
+/*-------------RODAPÉ------------*/
+@import 'footer'

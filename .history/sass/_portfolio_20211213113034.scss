@@ -1,0 +1,80 @@
+.works__container {
+    background-color: $secondary-bg;
+    padding: 3rem;
+
+    h2 {
+        @extend %section-title;
+    }
+
+    .works__list {
+        display: flex;
+        padding: 2rem 0;
+    }
+
+    .work__first--card {
+        width: 30%;
+        height: 415px;
+        margin: 0 2%;
+        background-image: url('../img/job1.jpg');
+        position: relative;
+        cursor: pointer;
+        transition: .5s;
+        @extend %center-bg;
+        @extend %card-hover;
+        box-shadow: 2px 2px 3px black;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    .work__other--cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 68%;
+
+        .work__card--cover {
+            width: 46%;
+            height: 200px;
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 15px;
+            margin-right: 15px;
+            @extend %center-bg;
+            @extend %card-hover;   
+            box-shadow: 2px 2px 3px black;
+            flex-wrap: wrap;
+        }
+
+        #job2 {
+            background-image: url('../img/job2.jpg');
+        }
+
+        #job3 {
+            background-image: url('../img/job3.jpg');
+        }
+
+        #job4 {
+            background-image: url('../img/job4.jpg');
+        }
+
+        #job5 {
+            background-image: url('../img/job5.jpg');
+        }
+    }
+
+    .work__card--title {
+        text-align: center;
+        color: $light-color;
+        font-size: 2.2rem;
+        transition: .5s;
+    }
+
+    .work__card--description {
+        text-align: center;
+        color: $light-color;
+        padding: 1rem;
+        font-size: .9rem;
+    }
+
+}

@@ -1,0 +1,12 @@
+@import 'variables';
+
+body {
+    font-family: 'Lato';
+}
+
+.nav__container--header {
+    //background-color: $bg-black;
+    li {
+        color: $li__text--color
+    }
+}

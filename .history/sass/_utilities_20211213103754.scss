@@ -1,0 +1,97 @@
+/*-------------MIXIN-------------*/
+@mixin reset {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lato';
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+@mixin main-hover {
+    transition: .3s;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+//MOBILE
+@mixin mobile {
+    @media (max-width: 425px;) 
+        @content;
+    
+
+}
+
+
+/*---------PLACEHOLDER %---------*/
+%title-text-shaddow {
+    text-shadow: 3px 2px $black;
+}
+
+%section-title {
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+%center-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+%card-hover {
+    .work__card--title, .work__card--cover, .work__card--description {
+        opacity: 0;
+    }
+
+    &:hover {
+        .work__card--title, .work__card--cover, .work__card--description {
+            opacity: 1;
+            color: $light-color;
+            text-align: center;
+            transition: background-color 0.5s;
+            height: auto;
+            background-color: rgba(0, 0, 0, .6);
+        }
+    }
+}
+
+/*-------------BOTÕES-------------*/
+.btn {
+    padding: .6rem 1rem;
+    border: 1px solid $light-color;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .3s;
+    color: $light-color;
+
+    &:hover {
+        border-color: $primary-color;
+        color: $primary-color;
+    }
+
+    &.btn-primary {
+        background-color: $primary-color;
+        border-color: $primary-color;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    &.btn-rounded {
+        margin-top: 1rem;
+        border-radius: 2rem;
+        padding: 1rem 1.5rem;
+    }
+}

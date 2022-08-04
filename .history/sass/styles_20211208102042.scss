@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'utilities';
+
+@include reset;
+
+#main-banner {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/office.jpg');
+    height: 85vh;
+
+}

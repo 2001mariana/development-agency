@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'utilities';
+
+@include reset;
+
+/*-------------CABEÇALHO-------------*/
+@import 'cabecalho';
+
+/*-------------SERVIÇOS-------------*/
+@import 'servicos';
+
+/*-------------PORTFÓLIO------------*/
+@import 'portfolio';
+
+/*-------------RODAPÉ------------*/
+footer {
+    background-color: $footer-bg;
+    color: $text-color;
+    padding: 5rem 2 rem;
+
+    .footer__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__container--title {
+        color: $light-color;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .footer__container--links, .footer__container--desc {
+        width: 50%;
+    }
+
+    .footer__container--desc {
+        p {
+            width: 80%;
+            line-height: 1.3;
+        }
+    }
+
+    .footer__container--links {
+       display: flex;
+    }
+
+    .footer__container--links-list {
+        padding: 0 1rem;
+
+        li {
+            margin-bottom: .5rem;
+        }
+
+        a {
+            color: $text-color;
+            transition: .5s;
+        }
+    }
+}

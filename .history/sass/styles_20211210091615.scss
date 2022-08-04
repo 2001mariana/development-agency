@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'utilities';
+
+@include reset;
+
+/*-------------CABEÇALHO-------------*/
+@import 'cabecalho';
+
+/*-------------SERVIÇOS-------------*/
+@import 'servicos';
+
+/*-------------PORTFÓLIO------------*/
+@import 'portfolio';
+
+/*-------------RODAPÉ------------*/
+footer {
+    background-color: $footer-bg;
+    
+}

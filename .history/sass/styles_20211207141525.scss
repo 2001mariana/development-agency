@@ -1,0 +1,25 @@
+@import 'variables';
+
+body {
+    font-family: 'Lato';
+}
+
+.nav__container--header {
+    background-color: $bg-black;
+    display: flex;
+
+    a {
+        color: $li__text--color;
+        text-decoration: none;
+    }
+
+    i {
+        color: $li__text--color;
+        cursor: pointer;
+    }
+
+}
+
+.btn {
+    padding: ;
+}

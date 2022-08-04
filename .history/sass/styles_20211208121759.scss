@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'utilities';
+
+@include reset;
+
+/*-------------CABEÇALHO-------------*/
+@import 'cabecalho';
+
+/*-------------SERVIÇOS-------------*/
+@import 'servicos';
+
+/*-------------PORTFÓLIO------------*/
+.works__container {
+    background-color: $secondary-bg;
+    padding: 3rem;
+
+    h2 {
+        @extend %section-title;
+    }
+
+    .works__list {
+        display: flex;
+        padding: 2rem 0;
+        //flex-wrap: wrap;
+        //justify-content: space-around;
+    }
+
+    .first-
+}
